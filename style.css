@@ -1,0 +1,24 @@
+.fixed-footer {
+    flex-shrink: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    height: 3%;
+}
+
+.fixed-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fixed-footer a:hover {
+    text-decoration: underline;
+}

@@ -11,6 +11,10 @@
             background-color: #f4f4f9;
             margin: 0;
             padding: 0;
+        }
+
+        .content {
+            padding-top: 70px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -43,530 +47,662 @@
             display: block;
             margin-top: 8px;
         }
+
+        header.search-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header.search-bar input {
+            width: 98%;
+            padding: 10px 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        header.search-bar input:focus {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .fixed-footer {
+            flex-shrink: 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .fixed-footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .fixed-footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Alchemy_Gold.jpg" alt="Alchemy Gold">
-        <a href="1368367.html" target="_blank">Alchemy Gold</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Anubis_Wrath.jpg" alt="Anubis Wrath">
-        <a href="1623475.html" target="_blank">Anubis Wrath</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Asgardian_Rising.jpg" alt="Asgardian Rising">
-        <a href="1340277.html" target="_blank">Asgardian Rising</a>
-    </div>
-    <div class="game-box">
-        <img src="https://www.pgsoft.com/uploads/Games/Images/31bdc924-27d3-4006-8381-37e87982375b.png"
-            alt="Baccarat Deluxe">
-        <a href="31.html" target="_blank">Baccarat Deluxe</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Bakery_Bonanza.jpg" alt="Bakery Bonanza">
-        <a href="1418544.html" target="_blank">Bakery Bonanza</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Bali_Vacation.jpg" alt="Bali Vacation">
-        <a href="94.html" target="_blank">Bali Vacation</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Battleground_Royale.jpg" alt="Battleground Royale">
-        <a href="124.html" target="_blank">Battleground Royale</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Bikini_Paradise.jpg" alt="Bikini Paradise">
-        <a href="69.html" target="_blank">Bikini Paradise</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Buffalo_Win.jpg" alt="Buffalo Win">
-        <a href="108.html" target="_blank">Buffalo Win</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Butterfly_Blossom.jpg" alt="Butterfly Blossom">
-        <a href="125.html" target="_blank">Butterfly Blossom</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000071/default.avif" alt="Cai Shen Wins">
-        <a href="71.html" target="_blank">CaiShen Wins</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Candy_Bonanza.jpg" alt="Candy Bonanza">
-        <a href="100.html" target="_blank">Candy Bonanza</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Candy_Burst.jpg" alt="Candy Burst">
-        <a href="70.html" target="_blank">Candy Burst</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Captain's_Bounty.jpg" alt="Captain's Bounty">
-        <a href="54.html" target="_blank">Captain's Bounty</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Cash_Mania.jpg" alt="Cash Mania">
-        <a href="1682240.html" target="_blank">Cash Mania</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001035/default.avif" alt="Chicky Run">
-        <a href="1738001.html" target="_blank">Chicky Run</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Circus_Delight.jpg" alt="Circus Delight">
-        <a href="80.html" target="_blank">Circus Delight</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Cocktail_Nights.jpg" alt="Cocktail Nights">
-        <a href="117.html" target="_blank">Cocktail Nights</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Crypto_Gold.jpg" alt="Crypto Gold">
-        <a href="103.html" target="_blank">Crypto Gold</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Cruise_Royale.jpg" alt="Cruise Royale">
-        <a href="1473388.html" target="_blank">Cruise Royale</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000121/default.avif"
-            alt="Destiny of Sun & Moon">
-        <a href="121.html" target="_blank">Destiny of Sun & Moon</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Diner_Delights.jpg" alt="Diner Delights">
-        <a href="1372643.html" target="_blank">Diner Delights</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Double_Fortune.jpg" alt="Double Fortune">
-        <a href="48.html" target="_blank">Double Fortune</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Dragon_Hatch.jpg" alt="Dragon Hatch">
-        <a href="57.html" target="_blank">Dragon Hatch</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001026/default.avif" alt="Dragon Hatch2">
-        <a href="1451122.html" target="_blank">Dragon Hatch2</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Dragon_Legend.jpg" alt="Dragon Legend">
-        <a href="29.html" target="_blank">Dragon Legend</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Dragon_Tiger_Luck.jpg" alt="Dragon Tiger Luck">
-        <a href="63.html" target="_blank">Dragon Tiger Luck</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000079/default.avif" alt="Dreams of Macau">
-        <a href="79.html" target="_blank">Dreams of Macau</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000073/default.avif"
-            alt="Egypt's Book of Mystery">
-        <a href="73.html" target="_blank">Egypt's Book of Mystery</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Emperor's_Favour.jpg" alt="Emperor's Favour">
-        <a href="44.html" target="_blank">Emperor's Favour</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Emoji_Riches.jpg" alt="Emoji Riches">
-        <a href="114.html" target="_blank">Emoji Riches</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Flirting_Scholar.jpg" alt="Flirting Scholar">
-        <a href="61.html" target="_blank">Flirting Scholar</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001022/default.avif" alt="Forge of Wealth">
-        <a href="1555350.html" target="_blank">Forge of Wealth</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Dragon.jpg" alt="Fortune Dragon">
-        <a href="1695365.html" target="_blank">Fortune Dragon</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Gods.jpg" alt="Fortune Gods">
-        <a href="3.html" target="_blank">Fortune Gods</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Mouse.jpg" alt="Fortune Mouse">
-        <a href="68.html" target="_blank">Fortune Mouse</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Ox.jpg" alt="Fortune Ox">
-        <a href="98.html" target="_blank">Fortune Ox</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Rabbit.jpg" alt="Fortune Rabbit">
-        <a href="1543462.html" target="_blank">Fortune Rabbit</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Tiger.jpg" alt="Fortune Tiger">
-        <a href="126.html" target="_blank">Fortune Tiger</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Fruity_Candy.jpg" alt="Fruity Candy">
-        <a href="1397455.html" target="_blank">Fruity Candy</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001036/default.avif" alt="Futebol Fever">
-        <a href="1778752.html" target="_blank">Futebol Fever</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Ganesha_Fortune.jpg" alt="Ganesha Fortune">
-        <a href="75.html" target="_blank">Ganesha Fortune</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Ganesha_Gold.jpg" alt="Ganesha Gold">
-        <a href="42.html" target="_blank">Ganesha Gold</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Galactic_Gems.jpg" alt="Galactic Gems">
-        <a href="86.html" target="_blank">Galactic Gems</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Garuda_Gems.jpg" alt="Garuda Gems">
-        <a href="122.html" target="_blank">Garuda Gems</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000002/default.avif" alt="Gem Saviour">
-        <a href="2.html" target="_blank">Gem Saviour</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Gem_Saviour_Conquest.jpg" alt="Gem Saviour Conquest">
-        <a href="62.html" target="_blank">Gem Saviour Conquest</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Gem_Saviour_Sword.jpg" alt="Gem Saviour Sword">
-        <a href="38.html" target="_blank">Gem Saviour Sword</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Gemstones_Gold.jpg" alt="Gemstones Gold">
-        <a href="1671262.html" target="_blank">Gemstones Gold</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000085/default.avif" alt="Genie's 3 Wishes">
-        <a href="85.html" target="_blank">Genie's 3 Wishes</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001018/default.avif" alt="Gladiator's Glory">
-        <a href="1572362.html" target="_blank">Gladiator's Glory</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000091/default.avif"
-            alt="Guardians of Ice & Fire">
-        <a href="91.html" target="_blank">Guardians of Ice & Fire</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Hawaiian_Tiki.jpg" alt="Hawaiian Tiki">
-        <a href="1381200.html" target="_blank">Hawaiian Tiki</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Heist_Stakes.jpg" alt="Heist Stakes">
-        <a href="105.html" target="_blank">Heist Stakes</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000033/default.avif" alt="Hip Hop Panda">
-        <a href="33.html" target="_blank">Hip Hop Panda</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000001/default.avif"
-            alt="Honey Trap of Diao Chan">
-        <a href="1.html" target="_blank">Honey Trap of Diao Chan</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000018/default.avif" alt="Hood vs Wolf">
-        <a href="18.html" target="_blank">Hood vs Wolf</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Hotpot.jpg" alt="Hotpot">
-        <a href="28.html" target="_blank">Hotpot</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Jack_Frost's_Winter.jpg" alt="Jack Frost's Winter">
-        <a href="97.html" target="_blank">Jack Frost's Winter</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000050/default.avif"
-            alt="Journey to the Wealth">
-        <a href="50.html" target="_blank">Journey to the Wealth</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Jungle_Delight.jpg" alt="Jungle Delight">
-        <a href="40.html" target="_blank">Jungle Delight</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Jurassic_Kingdom.jpg" alt="Jurassic Kingdom">
-        <a href="110.html" target="_blank">Jurassic Kingdom</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000088/default.avif"
-            alt="Jewels of Prosperity">
-        <a href="88.html" target="_blank">Jewels of Prosperity</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000034/default.avif" alt="Legend of Hou Yi">
-        <a href="34.html" target="_blank">Legend of Hou Yi</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000128/default.avif" alt="Legend of Perseus">
-        <a href="128.html" target="_blank">Legend of Perseus</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Legendary_Monkey_King.jpg" alt="Legendary Monkey King">
-        <a href="107.html" target="_blank">Legendary Monkey King</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Leprechaun_Riches.jpg" alt="Leprechaun Riches">
-        <a href="60.html" target="_blank">Leprechaun Riches</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Lucky_Clover_Lady.jpg" alt="Lucky Clover Lady">
-        <a href="1601012.html" target="_blank">Lucky Clover Lady</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Lucky_Neko.jpg" alt="Lucky Neko">
-        <a href="89.html" target="_blank">Lucky Neko</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Lucky_Piggy.jpg" alt="Lucky Piggy">
-        <a href="130.html" target="_blank">Lucky Piggy</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Mafia_Mayhem.jpg" alt="Mafia Mayhem">
-        <a href="1580541.html" target="_blank">Mafia Mayhem</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Mahjong_Ways.jpg" alt="Mahjong Ways">
-        <a href="65.html" target="_blank">Mahjong Ways</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Mahjong_Ways_2.jpg" alt="Mahjong Ways 2">
-        <a href="74.html" target="_blank">Mahjong Ways 2</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Majestic_Treasures.jpg" alt="Majestic Treasures">
-        <a href="95.html" target="_blank">Majestic Treasures</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000118/default.avif" alt="Mask Carnival">
-        <a href="118.html" target="_blank">Mask Carnival</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000007/default.avif"
-            alt="Medusa 1 The Curse of Athena">
-        <a href="7.html" target="_blank">Medusa 1 The Curse of Athena</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000006/default.avif"
-            alt="Medusa 2 The Quest of Perseus">
-        <a href="6.html" target="_blank">Medusa 2 The Quest of Perseus</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Mermaid_Riches.jpg" alt="Mermaid Riches">
-        <a href="102.html" target="_blank">Mermaid Riches</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Midas_Fortune.jpg" alt="Midas Fortune">
-        <a href="1402846.html" target="_blank">Midas Fortune</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Muay_Thai_Champion.jpg" alt="Muay Thai Champion">
-        <a href="64.html" target="_blank">Muay Thai Champion</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Mystical_Spirits.jpg" alt="Mystical Spirits">
-        <a href="1432733.html" target="_blank">Mystical Spirits</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Ninja_Raccoon_Frenzy.jpg" alt="Ninja Raccoon Frenzy">
-        <a href="1529867.html" target="_blank">Ninja Raccoon Frenzy</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000059/default.avif" alt="Ninja vs Samurai">
-        <a href="59.html" target="_blank">Ninja vs Samurai</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Oriental_Prosperity.jpg" alt="Oriental Prosperity">
-        <a href="112.html" target="_blank">Oriental Prosperity</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Opera_Dynasty.jpg" alt="Opera Dynasty">
-        <a href="93.html" target="_blank">Opera Dynasty</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Phoenix_Rises.jpg" alt="Phoenix Rises">
-        <a href="82.html" target="_blank">Phoenix Rises</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Piggy_Gold.jpg" alt="Piggy Gold">
-        <a href="39.html" target="_blank">Piggy Gold</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Pinata_Wins.jpg" alt="Pinata Wins">
-        <a href="1492288.html" target="_blank">Pinata Wins</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Plushie_Frenzy.jpg" alt="Plushie Frenzy">
-        <a href="25.html" target="_blank">Plushie Frenzy</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001001/default.avif"
-            alt="Prosperity Fortune Tree">
-        <a href="1312883.html" target="_blank">Prosperity Fortune Tree</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Prosperity_Lion.jpg" alt="Prosperity Lion">
-        <a href="36.html" target="_blank">Prosperity Lion</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000084/default.avif" alt="Queen of Bounty">
-        <a href="84.html" target="_blank">Queen of Bounty</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000113/default.avif"
-            alt="Raider Jane's Crypt of Fortune">
-        <a href="113.html" target="_blank">Raider Jane's Crypt of Fortune</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Rave_Party_Fever.jpg" alt="Rave Party Fever">
-        <a href="1420892.html" target="_blank">Rave Party Fever</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Reel_Love.jpg" alt="Reel Love">
-        <a href="20.html" target="_blank">Reel Love</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000101/default.avif" alt="Rise of Apollo">
-        <a href="101.html" target="_blank">Rise of Apollo</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Rooster_Rumble.jpg" alt="Rooster Rumble">
-        <a href="123.html" target="_blank">Rooster Rumble</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Safari_Wilds.jpg" alt="Safari Wilds">
-        <a href="1594259.html" target="_blank">Safari Wilds</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Santa's_Gift_Rush.jpg" alt="Santa's Gift Rush">
-        <a href="37.html" target="_blank">Santa's Gift Rush</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000090/default.avif"
-            alt="Secrets of Cleopatra">
-        <a href="90.html" target="_blank">Secrets of Cleopatra</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Shaolin_Soccer.jpg" alt="Shaolin Soccer">
-        <a href="67.html" target="_blank">Shaolin Soccer</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Songkran_Splash.jpg" alt="Songkran Splash">
-        <a href="1448762.html" target="_blank">Songkran Splash</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Speed_Winner.jpg" alt="Speed Winner">
-        <a href="127.html" target="_blank">Speed Winner</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Spirited_Wonders.jpg" alt="Spirited Wonders">
-        <a href="119.html" target="_blank">Spirited Wonders</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Super_Golf_Drive.jpg" alt="Super Golf Drive">
-        <a href="1513328.html" target="_blank">Super Golf Drive</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Supermarket_Spree.jpg" alt="Supermarket Spree">
-        <a href="115.html" target="_blank">Supermarket Spree</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000041/default.avif" alt="Symbols Of Egypt">
-        <a href="41.html" target="_blank">Symbols Of Egypt</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Thai_River_Wonders.jpg" alt="Thai River Wonders">
-        <a href="92.html" target="_blank">Thai River Wonders</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_The_Great_Icescape.jpg" alt="The Great Icescape">
-        <a href="53.html" target="_blank">The Great Icescape</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_The_Queen's_Banquet.jpg" alt="The Queen's Banquet">
-        <a href="120.html" target="_blank">The Queen's Banquet</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Totem_Wonders.jpg" alt="Totem Wonders">
-        <a href="1338274.html" target="_blank">Totem Wonders</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000026/default.avif" alt="Tree of Fortune">
-        <a href="26.html" target="_blank">Tree of Fortune</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000087/default.avif" alt="Treasures of Aztec">
-        <a href="87.html" target="_blank">Treasures of Aztec</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Tsar_Treasures.jpg" alt="Tsar Treasures">
-        <a href="1655268.html" target="_blank">Tsar Treasures</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Ultimate_Striker.jpg" alt="Ultimate Striker">
-        <a href="1489936.html" target="_blank">Ultimate Striker</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000058/default.avif" alt="Vampire's Charm">
-        <a href="58.html" target="_blank">Vampire's Charm</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000106/default.avif" alt="Ways of the Qilin">
-        <a href="106.html" target="_blank">Ways of the Qilin</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Werewolf's_Hunt.jpg" alt="Werewolf's Hunt">
-        <a href="1615454.html" target="_blank">Werewolf's Hunt</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001030/default.avif" alt="Wild Ape #3258">
-        <a href="1508783.html" target="_blank">Wild Ape #3258</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Bandito.jpg" alt="Wild Bandito">
-        <a href="104.html" target="_blank">Wild Bandito</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Bounty_Showdown.jpg" alt="Wild Bounty Showdown">
-        <a href="135.html" target="_blank">Wild Bounty Showdown</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Coaster.jpg" alt="Wild Coaster">
-        <a href="132.html" target="_blank">Wild Coaster</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Fireworks.jpg" alt="Wild Fireworks">
-        <a href="83.html" target="_blank">Wild Fireworks</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Heist_Cashout.jpg" alt="Wild Heist Cashout">
-        <a href="1568554.html" target="_blank">Wild Heist Cashout</a>
-    </div>
-    <div class="game-box">
-        <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000024/default.avif" alt="Win Win Won">
-        <a href="24.html" target="_blank">Win Win Won</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Win_Win_Fish_Prawn_Crab.jpg" alt="Win Win Fish Prawn Crab">
-        <a href="129.html" target="_blank">Win Win Fish Prawn Crab</a>
-    </div>
-    <div class="game-box">
-        <img src="https://oss.goodoss.net/images/gameicon/PG_Zombie_Outbreak.jpg" alt="Zombie Outbreak">
-        <a href="1635221.html" target="_blank">Zombie Outbreak</a>
-    </div>
+    <header class="search-bar">
+        <input width="100%" type="text" id="searchInput" placeholder="Buscar jogos...">
+    </header>
+
+    <div class="content">
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Alchemy_Gold.jpg" alt="Alchemy Gold">
+            <a href="1368367.html" target="_blank">Alchemy Gold</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Anubis_Wrath.jpg" alt="Anubis Wrath">
+            <a href="1623475.html" target="_blank">Anubis Wrath</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Asgardian_Rising.jpg" alt="Asgardian Rising">
+            <a href="1340277.html" target="_blank">Asgardian Rising</a>
+        </div>
+        <div class="game-box">
+            <img src="https://www.pgsoft.com/uploads/Games/Images/31bdc924-27d3-4006-8381-37e87982375b.png"
+                alt="Baccarat Deluxe">
+            <a href="31.html" target="_blank">Baccarat Deluxe</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Bakery_Bonanza.jpg" alt="Bakery Bonanza">
+            <a href="1418544.html" target="_blank">Bakery Bonanza</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Bali_Vacation.jpg" alt="Bali Vacation">
+            <a href="94.html" target="_blank">Bali Vacation</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Battleground_Royale.jpg" alt="Battleground Royale">
+            <a href="124.html" target="_blank">Battleground Royale</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Bikini_Paradise.jpg" alt="Bikini Paradise">
+            <a href="69.html" target="_blank">Bikini Paradise</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Buffalo_Win.jpg" alt="Buffalo Win">
+            <a href="108.html" target="_blank">Buffalo Win</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Butterfly_Blossom.jpg" alt="Butterfly Blossom">
+            <a href="125.html" target="_blank">Butterfly Blossom</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000071/default.avif" alt="Cai Shen Wins">
+            <a href="71.html" target="_blank">CaiShen Wins</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Candy_Bonanza.jpg" alt="Candy Bonanza">
+            <a href="100.html" target="_blank">Candy Bonanza</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Candy_Burst.jpg" alt="Candy Burst">
+            <a href="70.html" target="_blank">Candy Burst</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Captain's_Bounty.jpg" alt="Captain's Bounty">
+            <a href="54.html" target="_blank">Captain's Bounty</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Cash_Mania.jpg" alt="Cash Mania">
+            <a href="1682240.html" target="_blank">Cash Mania</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001035/default.avif" alt="Chicky Run">
+            <a href="1738001.html" target="_blank">Chicky Run</a>
+        </div>
+        <div class="game-box">
+            <img src="https://slotcatalog.com/userfiles/image/games/PG-Soft/39460/chocolate-deluxe-7061489_s.webp"
+                alt="Chocolate Deluxe">
+            <a href="1666445.html" target="_blank">Chocolate Deluxe</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Circus_Delight.jpg" alt="Circus Delight">
+            <a href="80.html" target="_blank">Circus Delight</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Cocktail_Nights.jpg" alt="Cocktail Nights">
+            <a href="117.html" target="_blank">Cocktail Nights</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Crypto_Gold.jpg" alt="Crypto Gold">
+            <a href="103.html" target="_blank">Crypto Gold</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Cruise_Royale.jpg" alt="Cruise Royale">
+            <a href="1473388.html" target="_blank">Cruise Royale</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000121/default.avif"
+                alt="Destiny of Sun & Moon">
+            <a href="121.html" target="_blank">Destiny of Sun & Moon</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Diner_Delights.jpg" alt="Diner Delights">
+            <a href="1372643.html" target="_blank">Diner Delights</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Double_Fortune.jpg" alt="Double Fortune">
+            <a href="48.html" target="_blank">Double Fortune</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Dragon_Hatch.jpg" alt="Dragon Hatch">
+            <a href="57.html" target="_blank">Dragon Hatch</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001026/default.avif" alt="Dragon Hatch2">
+            <a href="1451122.html" target="_blank">Dragon Hatch2</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Dragon_Legend.jpg" alt="Dragon Legend">
+            <a href="29.html" target="_blank">Dragon Legend</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Dragon_Tiger_Luck.jpg" alt="Dragon Tiger Luck">
+            <a href="63.html" target="_blank">Dragon Tiger Luck</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000079/default.avif" alt="Dreams of Macau">
+            <a href="79.html" target="_blank">Dreams of Macau</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000073/default.avif"
+                alt="Egypt's Book of Mystery">
+            <a href="73.html" target="_blank">Egypt's Book of Mystery</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Emperor's_Favour.jpg" alt="Emperor's Favour">
+            <a href="44.html" target="_blank">Emperor's Favour</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Emoji_Riches.jpg" alt="Emoji Riches">
+            <a href="114.html" target="_blank">Emoji Riches</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Flirting_Scholar.jpg" alt="Flirting Scholar">
+            <a href="61.html" target="_blank">Flirting Scholar</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001022/default.avif" alt="Forge of Wealth">
+            <a href="1555350.html" target="_blank">Forge of Wealth</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Dragon.jpg" alt="Fortune Dragon">
+            <a href="1695365.html" target="_blank">Fortune Dragon</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Gods.jpg" alt="Fortune Gods">
+            <a href="3.html" target="_blank">Fortune Gods</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Mouse.jpg" alt="Fortune Mouse">
+            <a href="68.html" target="_blank">Fortune Mouse</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Ox.jpg" alt="Fortune Ox">
+            <a href="98.html" target="_blank">Fortune Ox</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Rabbit.jpg" alt="Fortune Rabbit">
+            <a href="1543462.html" target="_blank">Fortune Rabbit</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Fortune_Tiger.jpg" alt="Fortune Tiger">
+            <a href="126.html" target="_blank">Fortune Tiger</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Fruity_Candy.jpg" alt="Fruity Candy">
+            <a href="1397455.html" target="_blank">Fruity Candy</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001036/default.avif" alt="Futebol Fever">
+            <a href="1778752.html" target="_blank">Futebol Fever</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Ganesha_Fortune.jpg" alt="Ganesha Fortune">
+            <a href="75.html" target="_blank">Ganesha Fortune</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Ganesha_Gold.jpg" alt="Ganesha Gold">
+            <a href="42.html" target="_blank">Ganesha Gold</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Galactic_Gems.jpg" alt="Galactic Gems">
+            <a href="86.html" target="_blank">Galactic Gems</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Garuda_Gems.jpg" alt="Garuda Gems">
+            <a href="122.html" target="_blank">Garuda Gems</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000002/default.avif" alt="Gem Saviour">
+            <a href="2.html" target="_blank">Gem Saviour</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Gem_Saviour_Conquest.jpg" alt="Gem Saviour Conquest">
+            <a href="62.html" target="_blank">Gem Saviour Conquest</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Gem_Saviour_Sword.jpg" alt="Gem Saviour Sword">
+            <a href="38.html" target="_blank">Gem Saviour Sword</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Gemstones_Gold.jpg" alt="Gemstones Gold">
+            <a href="1671262.html" target="_blank">Gemstones Gold</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000085/default.avif"
+                alt="Genie's 3 Wishes">
+            <a href="85.html" target="_blank">Genie's 3 Wishes</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001018/default.avif"
+                alt="Gladiator's Glory">
+            <a href="1572362.html" target="_blank">Gladiator's Glory</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000091/default.avif"
+                alt="Guardians of Ice & Fire">
+            <a href="91.html" target="_blank">Guardians of Ice & Fire</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Hawaiian_Tiki.jpg" alt="Hawaiian Tiki">
+            <a href="1381200.html" target="_blank">Hawaiian Tiki</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Heist_Stakes.jpg" alt="Heist Stakes">
+            <a href="105.html" target="_blank">Heist Stakes</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000033/default.avif" alt="Hip Hop Panda">
+            <a href="33.html" target="_blank">Hip Hop Panda</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000001/default.avif"
+                alt="Honey Trap of Diao Chan">
+            <a href="1.html" target="_blank">Honey Trap of Diao Chan</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000018/default.avif" alt="Hood vs Wolf">
+            <a href="18.html" target="_blank">Hood vs Wolf</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Hotpot.jpg" alt="Hotpot">
+            <a href="28.html" target="_blank">Hotpot</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Jack_Frost's_Winter.jpg" alt="Jack Frost's Winter">
+            <a href="97.html" target="_blank">Jack Frost's Winter</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000050/default.avif"
+                alt="Journey to the Wealth">
+            <a href="50.html" target="_blank">Journey to the Wealth</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Jungle_Delight.jpg" alt="Jungle Delight">
+            <a href="40.html" target="_blank">Jungle Delight</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Jurassic_Kingdom.jpg" alt="Jurassic Kingdom">
+            <a href="110.html" target="_blank">Jurassic Kingdom</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000088/default.avif"
+                alt="Jewels of Prosperity">
+            <a href="88.html" target="_blank">Jewels of Prosperity</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000034/default.avif"
+                alt="Legend of Hou Yi">
+            <a href="34.html" target="_blank">Legend of Hou Yi</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000128/default.avif"
+                alt="Legend of Perseus">
+            <a href="128.html" target="_blank">Legend of Perseus</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Legendary_Monkey_King.jpg" alt="Legendary Monkey King">
+            <a href="107.html" target="_blank">Legendary Monkey King</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Leprechaun_Riches.jpg" alt="Leprechaun Riches">
+            <a href="60.html" target="_blank">Leprechaun Riches</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Lucky_Clover_Lady.jpg" alt="Lucky Clover Lady">
+            <a href="1601012.html" target="_blank">Lucky Clover Lady</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Lucky_Neko.jpg" alt="Lucky Neko">
+            <a href="89.html" target="_blank">Lucky Neko</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Lucky_Piggy.jpg" alt="Lucky Piggy">
+            <a href="130.html" target="_blank">Lucky Piggy</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Mafia_Mayhem.jpg" alt="Mafia Mayhem">
+            <a href="1580541.html" target="_blank">Mafia Mayhem</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Mahjong_Ways.jpg" alt="Mahjong Ways">
+            <a href="65.html" target="_blank">Mahjong Ways</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Mahjong_Ways_2.jpg" alt="Mahjong Ways 2">
+            <a href="74.html" target="_blank">Mahjong Ways 2</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Majestic_Treasures.jpg" alt="Majestic Treasures">
+            <a href="95.html" target="_blank">Majestic Treasures</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000118/default.avif" alt="Mask Carnival">
+            <a href="118.html" target="_blank">Mask Carnival</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000007/default.avif"
+                alt="Medusa 1 The Curse of Athena">
+            <a href="7.html" target="_blank">Medusa 1 The Curse of Athena</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000006/default.avif"
+                alt="Medusa 2 The Quest of Perseus">
+            <a href="6.html" target="_blank">Medusa 2 The Quest of Perseus</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Mermaid_Riches.jpg" alt="Mermaid Riches">
+            <a href="102.html" target="_blank">Mermaid Riches</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Midas_Fortune.jpg" alt="Midas Fortune">
+            <a href="1402846.html" target="_blank">Midas Fortune</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Muay_Thai_Champion.jpg" alt="Muay Thai Champion">
+            <a href="64.html" target="_blank">Muay Thai Champion</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Mystical_Spirits.jpg" alt="Mystical Spirits">
+            <a href="1432733.html" target="_blank">Mystical Spirits</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Ninja_Raccoon_Frenzy.jpg" alt="Ninja Raccoon Frenzy">
+            <a href="1529867.html" target="_blank">Ninja Raccoon Frenzy</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000059/default.avif"
+                alt="Ninja vs Samurai">
+            <a href="59.html" target="_blank">Ninja vs Samurai</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Oriental_Prosperity.jpg" alt="Oriental Prosperity">
+            <a href="112.html" target="_blank">Oriental Prosperity</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Opera_Dynasty.jpg" alt="Opera Dynasty">
+            <a href="93.html" target="_blank">Opera Dynasty</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Phoenix_Rises.jpg" alt="Phoenix Rises">
+            <a href="82.html" target="_blank">Phoenix Rises</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Piggy_Gold.jpg" alt="Piggy Gold">
+            <a href="39.html" target="_blank">Piggy Gold</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Pinata_Wins.jpg" alt="Pinata Wins">
+            <a href="1492288.html" target="_blank">Pinata Wins</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Plushie_Frenzy.jpg" alt="Plushie Frenzy">
+            <a href="25.html" target="_blank">Plushie Frenzy</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001001/default.avif"
+                alt="Prosperity Fortune Tree">
+            <a href="1312883.html" target="_blank">Prosperity Fortune Tree</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Prosperity_Lion.jpg" alt="Prosperity Lion">
+            <a href="36.html" target="_blank">Prosperity Lion</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000084/default.avif" alt="Queen of Bounty">
+            <a href="84.html" target="_blank">Queen of Bounty</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000113/default.avif"
+                alt="Raider Jane's Crypt of Fortune">
+            <a href="113.html" target="_blank">Raider Jane's Crypt of Fortune</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Rave_Party_Fever.jpg" alt="Rave Party Fever">
+            <a href="1420892.html" target="_blank">Rave Party Fever</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Reel_Love.jpg" alt="Reel Love">
+            <a href="20.html" target="_blank">Reel Love</a>
+        </div>
+        <div class="game-box">
+            <img src="https://slotcatalog.com/userfiles/image/games/PG-Soft/38775/rio-fantasia-7059680_s.webp"
+                alt="Rio Fantasia">
+            <a href="1786529.html" target="_blank">Rio Fantasia</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000101/default.avif" alt="Rise of Apollo">
+            <a href="101.html" target="_blank">Rise of Apollo</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Rooster_Rumble.jpg" alt="Rooster Rumble">
+            <a href="123.html" target="_blank">Rooster Rumble</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Safari_Wilds.jpg" alt="Safari Wilds">
+            <a href="1594259.html" target="_blank">Safari Wilds</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Santa's_Gift_Rush.jpg" alt="Santa's Gift Rush">
+            <a href="37.html" target="_blank">Santa's Gift Rush</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000090/default.avif"
+                alt="Secrets of Cleopatra">
+            <a href="90.html" target="_blank">Secrets of Cleopatra</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Shaolin_Soccer.jpg" alt="Shaolin Soccer">
+            <a href="67.html" target="_blank">Shaolin Soccer</a>
+        </div>
+        <div class="game-box">
+            <img src="https://slotcatalog.com/userfiles/image/games/PG-Soft/37311/shark-hunter-pg-soft-7044086_s.webp"
+                alt="Shark Hunter">
+            <a href="1648578.html" target="_blank">Shark Hunter</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Songkran_Splash.jpg" alt="Songkran Splash">
+            <a href="1448762.html" target="_blank">Songkran Splash</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Speed_Winner.jpg" alt="Speed Winner">
+            <a href="127.html" target="_blank">Speed Winner</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Spirited_Wonders.jpg" alt="Spirited Wonders">
+            <a href="119.html" target="_blank">Spirited Wonders</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Super_Golf_Drive.jpg" alt="Super Golf Drive">
+            <a href="1513328.html" target="_blank">Super Golf Drive</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Supermarket_Spree.jpg" alt="Supermarket Spree">
+            <a href="115.html" target="_blank">Supermarket Spree</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000041/default.avif"
+                alt="Symbols Of Egypt">
+            <a href="41.html" target="_blank">Symbols Of Egypt</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Thai_River_Wonders.jpg" alt="Thai River Wonders">
+            <a href="92.html" target="_blank">Thai River Wonders</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_The_Great_Icescape.jpg" alt="The Great Icescape">
+            <a href="53.html" target="_blank">The Great Icescape</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_The_Queen's_Banquet.jpg" alt="The Queen's Banquet">
+            <a href="120.html" target="_blank">The Queen's Banquet</a>
+        </div>
+        <div class="game-box">
+            <img src="https://slotcatalog.com/userfiles/image/games/PG-Soft/38506/three-crazy-piggies-7053190_s.webp"
+                alt="Three Crazy Piggies">
+            <a href="1727711.html" target="_blank">Three Crazy Piggies</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Totem_Wonders.jpg" alt="Totem Wonders">
+            <a href="1338274.html" target="_blank">Totem Wonders</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000026/default.avif" alt="Tree of Fortune">
+            <a href="26.html" target="_blank">Tree of Fortune</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000087/default.avif"
+                alt="Treasures of Aztec">
+            <a href="87.html" target="_blank">Treasures of Aztec</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Tsar_Treasures.jpg" alt="Tsar Treasures">
+            <a href="1655268.html" target="_blank">Tsar Treasures</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Ultimate_Striker.jpg" alt="Ultimate Striker">
+            <a href="1489936.html" target="_blank">Ultimate Striker</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000058/default.avif" alt="Vampire's Charm">
+            <a href="58.html" target="_blank">Vampire's Charm</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000106/default.avif"
+                alt="Ways of the Qilin">
+            <a href="106.html" target="_blank">Ways of the Qilin</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Werewolf's_Hunt.jpg" alt="Werewolf's Hunt">
+            <a href="1615454.html" target="_blank">Werewolf's Hunt</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2001030/default.avif" alt="Wild Ape #3258">
+            <a href="1508783.html" target="_blank">Wild Ape #3258</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Bandito.jpg" alt="Wild Bandito">
+            <a href="104.html" target="_blank">Wild Bandito</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Bounty_Showdown.jpg" alt="Wild Bounty Showdown">
+            <a href="135.html" target="_blank">Wild Bounty Showdown</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Coaster.jpg" alt="Wild Coaster">
+            <a href="132.html" target="_blank">Wild Coaster</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Fireworks.jpg" alt="Wild Fireworks">
+            <a href="83.html" target="_blank">Wild Fireworks</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Wild_Heist_Cashout.jpg" alt="Wild Heist Cashout">
+            <a href="1568554.html" target="_blank">Wild Heist Cashout</a>
+        </div>
+        <div class="game-box">
+            <img src="https://slotcatalog.com/userfiles/image/games/PG-Soft/37900/wings-of-iguazu-7049629_s.webp"
+                alt="Wings of Iguazu">
+            <a href="1747549.html" target="_blank">Wings of Iguazu</a>
+        </div>
+        <div class="game-box">
+            <img src="https://cdntoos.pay23bet.com/game_pictures/g/EA/200/3/2000024/default.avif" alt="Win Win Won">
+            <a href="24.html" target="_blank">Win Win Won</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Win_Win_Fish_Prawn_Crab.jpg"
+                alt="Win Win Fish Prawn Crab">
+            <a href="129.html" target="_blank">Win Win Fish Prawn Crab</a>
+        </div>
+        <div class="game-box">
+            <img src="https://slotcatalog.com/userfiles/image/games/PG-Soft/37651/yakuza-honor-7046118_s.webp"
+                alt="Yakuza Honor">
+            <a href="1760238.html" target="_blank">Yakuza Honor</a>
+        </div>
+        <div class="game-box">
+            <img src="https://oss.goodoss.net/images/gameicon/PG_Zombie_Outbreak.jpg" alt="Zombie Outbreak">
+            <a href="1635221.html" target="_blank">Zombie Outbreak</a>
+        </div>
+    </div>
+    <footer class="fixed-footer">
+        <a href="https://556bet.games/?a=pod84kng" target="_blank">Clique aqui para jogar em modo Real</a>
+    </footer>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const gameBoxes = document.querySelectorAll('.game-box');
+        gameBoxes.forEach(function (gameBox) {
+            gameBox.addEventListener('click', function () {
+                const linkElement = gameBox.querySelector('a');
+                if (linkElement) {
+                    const link = linkElement.getAttribute('href');
+                    if (link) {
+                        window.open(link, '_blank');
+                    }
+                }
+            });
+        });
+        const input = document.getElementById('searchInput');
+        input.addEventListener('input', function () {
+            const filter = input.value.toLowerCase();
+            const gameBoxes = document.querySelectorAll('.game-box');
+
+            gameBoxes.forEach(function (gameBox) {
+                const gameName = gameBox.querySelector('a').textContent.toLowerCase();
+                if (gameName.includes(filter)) {
+                    gameBox.style.display = '';
+                } else {
+                    gameBox.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
 
 </html>
